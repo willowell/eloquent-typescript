@@ -1,10 +1,16 @@
-export const delayMillis = (delayMs: number): Promise<void> => new Promise(resolve => setTimeout(resolve, delayMs));
+export const delayMillis = async (delayMs: number): Promise<void> => (
+  await new Promise(resolve => setTimeout(resolve, delayMs))
+)
 
-export const greet = (name: string): string => `Hello ${name}`
+export const greet = (name: string): string => `Bonjour ${name} !`
 
 export const foo = async (): Promise<boolean> => {
-  console.log(greet('World'))
+  console.log(greet('le monde'))
   await delayMillis(1000)
-  console.log('done')
+  console.log('fini')
   return true
+}
+
+export const main = async (): Promise<void> => {
+
 }
