@@ -30,8 +30,13 @@
       "node",
       "jest"
     ],
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": [ "src/*" ]
+    }
   },
   "include": [
+    "app/**/*.ts",
     "src/**/*.ts",
     "src/**/*.test.ts"
   ],
