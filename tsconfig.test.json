@@ -1,8 +1,18 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "commonjs",
+    "target": "ESNext",
+    "module": "CommonJS",
     "moduleResolution": "node",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
+    "sourceMap": true,
+    "allowJs": true,
+    "checkJs": true,
     "declaration": true,
     "strict": true,
     "noEmit": true,
@@ -15,18 +25,11 @@
     "noFallthroughCasesInSwitch": true /* Report errors for fallthrough cases in switch statement. */,
     "importHelpers": true,
     "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
-    "sourceMap": true,
     "types": [
       "node",
       "jest"
     ],
-    "lib": [
-      "ES6",
-      "DOM"
-    ]
   },
   "include": [
     "src/**/*.test.ts"
