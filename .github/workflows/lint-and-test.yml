@@ -9,7 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         # Use NVM syntax.
-        nodejs: [ 'lts/fermium', 'stable' ]
+        nodejs: [ lts/fermium, stable ]
 
     steps:
     - uses: actions/checkout@v2
